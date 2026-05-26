@@ -54,7 +54,7 @@ $eventos = $controller->getAllEvents();
 
   <main class="events-container">
     <div class="events-grid">
-      <?php if (empty($eventos)): ?>
+      <?php if (!empty($eventos)): ?>
         <?php $counter = 1; foreach ($eventos as $event): ?>
           <div class="event-card">
             <div class="event-badge"><?php echo htmlspecialchars($event['name']); ?></div>
