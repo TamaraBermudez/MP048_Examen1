@@ -69,7 +69,7 @@ $eventos = $controller->getAllEvents();
                 <h3 class="event-title"><?php echo htmlspecialchars($event['name']); ?></h3>
                 <div class="event-location">
                   <i class="fas fa-map-marker-alt"></i>
-                  <div><?php echo htmlspecialchars($event['location']); ?></div>
+                  <span><?php echo htmlspecialchars($event['location']); ?></span>
                 </div>
               </div>
               <div class="event-meta">

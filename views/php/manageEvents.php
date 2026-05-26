@@ -77,7 +77,7 @@ if (isset($_GET['id'])) {
         <hr>
 
         <h3>Eventos existentes:</h3>
-        <?php if (!empty($eventos)): ?>
+        <?php if (empty($eventos)): ?>
             <ul class="event-list">
                 <?php foreach ($eventos as $event): ?>
     <li>
